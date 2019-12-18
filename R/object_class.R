@@ -8,7 +8,7 @@
 #' @export
 
 object_class <- function (object){
-    obj_class <- class(object)
+    obj_class <- class(object)[1]
     if (obj_class == "matrix"){
         cat ("Object type is matrix!", "\n")
     } else {
